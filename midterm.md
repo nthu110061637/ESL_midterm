@@ -291,12 +291,9 @@ FL : L + F
 ![FL_time.PNG](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/FL_time.PNG)
 
 FL1234 : F + HLS_CONSTRAIN_LATENCY(0,1,"FLOOP1"); 
-
-            + HLS_CONSTRAIN_LATENCY(0,1,"FLOOP2");
-
-            + HLS_CONSTRAIN_LATENCY(0,1,"FLOOP3");
-
-       + HLS_CONSTRAIN_LATENCY(0,1,"FLOOP4");
++ HLS_CONSTRAIN_LATENCY(0,1,"FLOOP2");
++ HLS_CONSTRAIN_LATENCY(0,1,"FLOOP3");
++ HLS_CONSTRAIN_LATENCY(0,1,"FLOOP4");
 
 ![FL1234_area.PNG](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/FL1234_area.PNG)
 
@@ -318,11 +315,12 @@ I get the total latency of 1235 ns when doing 10 items sorting for 1 times.
 ![TLM_simulation_time.png](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/TLM_simulation_time.png)
 
 ### Demo
-
+HLS
 ![Demo_HLS.png](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/Demo_HLS.png)
 
+TLM
 ![Demo_TLM.png](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/Demo_TLM.png)
 
-TLM
 
-HLS
+
+
