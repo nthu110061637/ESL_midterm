@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -Wall -pedantic -D CLOCK_PERIOD=5.0  -rdynamic CMakeFiles/merge.dir/Initiator.cpp.o CMakeFiles/merge.dir/MergeSort.cpp.o CMakeFiles/merge.dir/Testbench.cpp.o CMakeFiles/merge.dir/main.cpp.o CMakeFiles/merge.dir/tlm_log.cpp.o  -o merge  -Wl,-rpath,/opt/systemc/lib /opt/systemc/lib/libsystemc.so.2.3.3 -pthread 
