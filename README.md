@@ -1,7 +1,7 @@
 # ESL_midterm
 
 ### TLM  
-$　cd build  
+$ cd build  
 $  cmake ..  
 $  make  
 $  make run  
