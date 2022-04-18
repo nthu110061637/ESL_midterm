@@ -25,13 +25,11 @@
 
 #ifndef _DEFINES_H_
 #define _DEFINES_H_
+
 const int arraysize = 10;
+const int num = 10;
 
 typedef sc_uint < 8 > input_t;
 typedef sc_uint < 8 > output_t;
-
-const int MERGE_R_ADDR = 0x00000000;
-const int MERGE_RESULT_ADDR = 0x00000004;
-const int MERGE_CHECK_ADDR = 0x00000008;
 
 #endif // _DEFINES_H_
