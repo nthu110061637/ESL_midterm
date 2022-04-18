@@ -268,27 +268,27 @@ The directives need to turn on at [dut.cc](http://dut.cc) or project.tcl manuall
 
 Original : Without doing any optimization.
 
-![nothing_area.PNG](Midterm%20Pr%2039558/nothing_area.png)
+![Original_area.PNG](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/Original_area.PNG)
 
-![nothing_time.PNG](Midterm%20Pr%2039558/nothing_time.png)
+![Original_time.PNG](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/Original_time.PNG)
 
 L : HLS_CONSTRAIN_LATENCY(0,9,"LOOP");
 
-![lat_area.PNG](Midterm%20Pr%2039558/lat_area.png)
+![L_area.PNG](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/L_area.PNG)
 
-![lat_time.PNG](Midterm%20Pr%2039558/lat_time.png)
+![L_time.PNG](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/L_time.PNG)
 
 F : set_attr flatten_arrays	none ;  →  set_attr flatten_arrays	all ; (project.tcl)
 
-![flatten_area.PNG](Midterm%20Pr%2039558/flatten_area.png)
+![F_area.PNG](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/F_area.PNG)
 
-![flatten_time.PNG](Midterm%20Pr%2039558/flatten_time.png)
+![F_time.PNG](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/F_time.PNG)
 
 FL : L + F
 
-![FL_area.PNG](Midterm%20Pr%2039558/FL_area.png)
+![FL_area.PNG](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/FL_area.PNG)
 
-![FL_time.PNG](Midterm%20Pr%2039558/FL_time.png)
+![FL_time.PNG](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/FL_time.PNG)
 
 FL1234 : F + HLS_CONSTRAIN_LATENCY(0,1,"FLOOP1"); 
 
@@ -298,9 +298,9 @@ FL1234 : F + HLS_CONSTRAIN_LATENCY(0,1,"FLOOP1");
 
        + HLS_CONSTRAIN_LATENCY(0,1,"FLOOP4");
 
-![FL1234_area.PNG](Midterm%20Pr%2039558/FL1234_area.png)
+![FL1234_area.PNG](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/FL1234_area.PNG)
 
-![FL1234_time.PNG](Midterm%20Pr%2039558/FL1234_time.png)
+![FL1234_time.PNG](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/FL1234_time.PNG)
 
 ### TLM
 
@@ -311,17 +311,17 @@ I get the total latency of 1235 ns when doing 10 items sorting for 1 times.
 | HLS | 12365 |
 | TLM | 14450 |
 
-![Untitled](Midterm%20Pr%2039558/Untitled.png)
+![HLS_simulation_time.png](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/HLS_simulation_time.png)
 
-![Untitled](Midterm%20Pr%2039558/Untitled%201.png)
+![TLM_wait.png](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/TLM_wait.png)
 
-![Untitled](Midterm%20Pr%2039558/Untitled%202.png)
+![TLM_simulation_time.png](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/TLM_simulation_time.png)
 
 ### Demo
 
-![Untitled](Midterm%20Pr%2039558/Untitled%203.png)
+![Demo_HLS.png](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/Demo_HLS.png)
 
-![Untitled](Midterm%20Pr%2039558/Untitled%204.png)
+![Demo_TLM.png](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/Demo_TLM.png)
 
 TLM
 
