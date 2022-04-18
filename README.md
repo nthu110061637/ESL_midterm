@@ -1,17 +1,17 @@
 # ESL_midterm
 
-### TLM
-$　cd build
-$  cmake ..
-$  make
-$  make run
+### TLM  
+$　cd build  
+$  cmake ..  
+$  make  
+$  make run  
 
 The input file is "stimulus.txt"  
 The output file is "response.txt"
 
 
-### HLS
-$  make sim_BASIC_V 
+### HLS  
+$  make sim_BASIC_V   
 
 The input file is "stimulus.dat"  
 The output file is "response.dat"
