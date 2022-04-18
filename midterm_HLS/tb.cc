@@ -21,7 +21,7 @@ void tb::source()
 	}
 	total_start_time = sc_time_stamp();
 	// Read stimulus values from file and send to DUT
-	for( int r = 0 ; r < 10 ; r++){
+	for( int r = 0 ; r < num ; r++){
 		for( int i = 0; i < arraysize; i++ )
 		{
 			int value;
@@ -61,7 +61,7 @@ void tb::sink()
 
 	// Read outputs from DUT
 	
-	for( int r = 0 ; r < 10 ; r ++){
+	for( int r = 0 ; r < num ; r ++){
 		for( int i = 0; i < arraysize; i++ )
 		{
 			output_t inVal = din.get();
