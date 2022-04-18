@@ -28,10 +28,9 @@ void dut::thread1()
 			int rght, rend;
 			int i,j,m;
 
-			for (int k=1; k < arraysize; k *= 2 ) {
-				//HLS_UNROLL_LOOP(ALL,"loop");     
+			for (int k=1; k < arraysize; k *= 2 ) {   
 				for (int left=0; left+k < arraysize; left += k*2 ) {
-					//HLS_UNROLL_LOOP(ON,"inner"); // not useful
+					//HLS_CONSTRAIN_LATENCY(0,9,"LOOP");
 					rght = left + k;        
 					rend = rght + k;
 					if (rend > arraysize) {
@@ -41,6 +40,7 @@ void dut::thread1()
 					i = left; 
 					j = rght;
 					for(m = left;(i < rght) && (j < rend); m ++){
+						HLS_CONSTRAIN_LATENCY(0,1,"FLOOP1");
 						if (sortdata[i] <= sortdata[j]) {         
 							sorting[m] = sortdata[i]; 
 							i++;
@@ -51,15 +51,17 @@ void dut::thread1()
 						}
 					}
 					for(;i < rght;i++){
+						HLS_CONSTRAIN_LATENCY(0,1,"FLOOP2");
 						sorting[m]=sortdata[i]; 
 						m++;
 					}
 					for(;j < rend;j++){
+						HLS_CONSTRAIN_LATENCY(0,1,"FLOOP3");
 						sorting[m]=sortdata[j]; 
 						m++;
 					}
 					for (m=left; m < rend; m++) { 
-						//HLS_PIPELINE_LOOP(SOFT_STALL,1,"COMP");
+						HLS_CONSTRAIN_LATENCY(0,1,"FLOOP4");
 						sortdata[m] = sorting[m]; 
 					}
 					
