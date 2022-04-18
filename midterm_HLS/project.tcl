@@ -46,7 +46,7 @@ set_attr rtl_annotation			op,stack
 set_attr default_input_delay	0.1				;# Prevents registering of inputs
 set_attr dpopt_auto				off				;# Set automatic DPOPT part creation: off, array, op, expr
 set_attr dpopt_with_enable		off				;# Control if enable pins are on DPOPT parts (default=off)
-set_attr flatten_arrays			none			;# Control array flattening: none, all_const, lhs_const, all default=none
+set_attr flatten_arrays			all			;# Control array flattening: none, all_const, lhs_const, all default=none
 set_attr global_state_encoding	binary			;# Control FSM state encoding: binary, one_hot  default=binary
 #set_attr ignore_cells			"XYZ* ABC*"		;# Define list of cells to ignore
 set_attr inline_partial_constants	on			;# Remove constant portions of variables
