@@ -299,15 +299,18 @@ FL1234 : F + HLS_CONSTRAIN_LATENCY(0,1,"FLOOP1"); + HLS_CONSTRAIN_LATENCY(0,1,"F
 
 I get the total latency of 1235 ns when doing 10 items sorting for 1 times.
 
-|  | Simulated time (ns) |
+|  | Simulation time (ns) |
 | --- | --- |
 | HLS | 12365 |
 | TLM | 14450 |
 
+### HLS simulation time  
 ![HLS_simulation_time.png](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/HLS_simulation_time.png)
 
+### TLM wait  
 ![TLM_wait.png](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/TLM_wait.png)
 
+### TLM simulatione time
 ![TLM_simulation_time.png](https://raw.githubusercontent.com/nthu110061637/ESL_midterm/main/midterm_result_pic/TLM_simulation_time.png)
 
 ### Demo
